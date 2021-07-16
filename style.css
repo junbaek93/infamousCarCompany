@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: black;
+}
+
+/*-----------NAVIGATION BAR--------------*/
+
+
+.intro-page{
+    height: 90vh;
+    width: 100%;
+}
+.navbar{
+    background-color: rgba(161, 150, 150, 0.295);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+
+.logo{
+    float: left;
+    margin: 14px 20px 30px 40px;
+}
+
+.navlinks{
+    float: left;
+    font-size: 20px;
+    margin: 20px 0px 0px 20%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navlist:nth-child(2){
+    padding: 0px 100px 0px 100px;
+}
+
+.navlist:last-child{
+    background-color: rgb(51, 183, 235);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 300px;
+
+}
+
+.links:hover{
+    color: rgb(0, 162, 255);
+    transition: all 0.3s ease;
+}
+
+
+/*--------Background hero image--------*/
+
+.background-hero{
+    background-image: url(/images/370z.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+}
+
+/*--------Main page content--------*/
+.main-page-content{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-page-content > h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------Offer section-------*/
+.offer-section{
+    height: 350px;
+    width: 100%;
+    background-color: rgba(161, 150, 150, 0.205);
+}
+
+.offer-header{
+    color: white;
+    padding-top: 28px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.offers{
+    color: white;
+    display: flex;
+    margin-top: 50px;
+    padding: 0 50px 0 80px ;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.miles, .price, .inventory{
+    height: 200px;
+    width: 400px;
+}
+
+.icons{
+    margin-left: 40%;
+}
+
+.offer-header-sub{
+    text-align: center;
+    font-size: 30px;
+}
+
+/*--------garage section------*/
+
+.garage-section{
+    height: 1650px;
+}
+
+.garage-header{
+    color: white;
+    padding-top: 28px;
+    font-size: 25px;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+.garage-container{
+    margin: 50px auto;
+    max-width: 1800px;
+    height: 1000px;
+}
+
+.grid{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.grid li{
+    padding: 5px;
+    width: 600px;
+    height: 500px;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+}
+
+.box-header{
+    background-color: rgba(0, 0, 0, 0.733);
+    height: 40px;
+}
+
+.box-header > p{
+    padding-top: 6px;
+}
+
+.american{
+    background: url(/images/americanCars.jpg);   
+    background-size: cover; 
+}
+
+
+.audi{
+    background: url(/images/audiCars.jpg);   
+    background-size: cover; 
+    background-position-y: -400px;
+    
+}
+
+.bmw{
+    background: url(/images/bmwCars.jpg);   
+    background-size: cover; 
+
+    
+}
+
+.farrari{
+    background: url(/images/ferrariCars.jpg);   
+    background-size: cover;
+    background-position-x: -140px;
+    
+}
+
+.japanese{
+    background: url(/images/japaneseCars.jpg);   
+    background-size: cover;
+    background-position-x: -140px;
+}
+
+.lambo{
+    background: url(/images/lamboCars.jpg);   
+    background-size: cover; 
+    background-position-x: -100px;
+}
+
+.mclaren{
+    background: url(/images/mclarenCars.jpg);   
+    background-size: cover; 
+    background-position-x: -145px;
+}
+
+.mercedes{
+    background: url(/images/mercedesCars.jpg);   
+    background-size: cover; 
+    background-position-y: -100px;
+}
+
+.porshe{
+    background: url(/images/porcheCars.jpg);   
+    background-size: cover; 
+}
+
+/*------About Section-----*/
+.about-container{
+    margin: 0 auto;
+    width: 1800px;
+    height: 550px;
+    
+}
+
+.about-header{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.storeimg{
+    width: 350px;
+    height: 450px;
+    background: url(/images/store.jpg);
+    background-size: cover;
+    float: left;
+}
+
+.about-container > p{
+    width: 1300px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+/*------reserve section------*/
+.reserve-section{
+    height: 350px;
+    width: 100%;
+    background-color: rgba(161, 150, 150, 0.205);
+}
+.reserve-header{
+    color: white;
+    padding-top: 28px;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .navlinks{
+        float: left;
+        font-size: 20px;
+        margin: 20px 0 0 100px;
+    }
+
+    .navlist:nth-child(2){
+        padding: 0 20px 0 20px;
+    }
+    
+    .navlist:last-child{
+        margin-left: 100px;
+    
+    }
+
+    .main-page-content{
+        width: 768px;
+        
+    }
+
+    .main-page-content > h1{
+        font-size: 30px;
+        width: 600px;
+    }
+
+    .grid{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+    
+    .garage-container{
+        margin: 0 auto;
+        width: 760px;
+        height: 1000px;
+    }
+
+    .grid li{
+        width: 300px;
+        height: 300px;
+    }
+
+    .american{ 
+        background-size: cover; 
+        background-position-x: -50px;
+    }
+
+    .audi{
+        background: url(/images/audiCars.jpg);   
+        background-size: cover; 
+        background-position-y: -100px;
+        
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .background-hero{
+        background-image: url(/images/370z.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        width: 1024px;
+    }
+    
+    .navlinks{
+        float: left;
+        font-size: 20px;
+        margin: 20px 0 0 100px;
+    }
+
+    .navlist:nth-child(2){
+        padding: 0 20px 0 20px;
+    }
+    
+    .navlist:last-child{
+        margin-left: 100px;
+    
+    }
+
+    .main-page-content{
+        width: 1024px;
+        
+    }
+
+    .main-page-content > h1{
+        font-size: 30px;
+        width: 600px;
+    }
+
+    .garage-container{
+        margin-left: 20px;
+        max-width: 1000px;
+        height: 1000px;
+    }
+
+    .grid li{
+        width: 300px;
+        height: 300px;
+    }
+
+    .american{ 
+        background-size: cover; 
+        background-position-x: -50px;
+    }
+
+    .audi{
+        background: url(/images/audiCars.jpg);   
+        background-size: cover; 
+        background-position-y: -100px;
+        
+    }
+}
+
