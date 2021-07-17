@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class="intro-page">
-            <!--Navbar section-->
+        
+        <!--NAVBAR-->
             <div class="navbar">
-                <div class="logo"><img src="/images/logo.png" alt=""></div>
+                <div class="logo"><img src="images/logo2 (2).png" alt=""></div>
                 <div class="navlinks">
                     <ul>
                         <li class="navlist"><a class="links" href="#">Reservation</a></li>
@@ -21,8 +21,10 @@
                         <li class="navlist"><a class="links" href="#">Contact</a></li>
                     </ul>
                 </div>  
-            </div>            
-            <!--Main Page Content-->
+            </div>   
+
+        <!--INTRO PAGE-->
+        <section class="intro-page">
             <div class="main-page-content">
                 <h1>
                     Welcome to Infamous Car Company
@@ -31,6 +33,7 @@
             <div class="background-hero"></div>
         </section>
 
+        <!--OFFER SECTION-->
         <section class="offer-section">
             <p class="offer-header">What We Offer</p>
             <div class="offers">
@@ -51,7 +54,8 @@
                 </div>
             </div>
         </section>
-
+        
+        <!--GARAGE SECTION-->
         <section class="garage-section">
             <p class="garage-header">Our Collection</p>
             <div class="garage-container">
@@ -130,7 +134,8 @@
                 </ul>
             </div>
         </section>
-        
+       
+        <!--ABOUT US SECTION-->
         <section class="about">
             <div class="about-container">
                 <div class="about-header">
@@ -145,16 +150,61 @@
                 </p>
             </div>
         </section>
+       
+        <!--RESERVE SECTION-->
         <section class="reserve-section">
             <div class="reserve-header">
                 <p>
                     Reserve Now!
                 </p>
             </div>
-            <label for="location">Choose your</label>
-            <input type="text" id="address" name="location">
+            <div class="reserve-container">
+                <form>
+                    <p>
+                        <label for="location">Choose your location: </label><br>
+                        <input list="locations" id="address" name="location">
+                            <datalist id="locations">
+                                <option value="Las Vegas, NV"></option>
+                                <option value="Austin, TX"></option>
+                                <option value="Los Angeles, CA"></option>
+                                <option value="New York City, NY"></option>
+                                <option value="Miami, FL"></option>
+                            </datalist><br>
+                    </p>
+                    <p>
+                        <label for="vehicle">Choose your vehicle:</label><br>
+                        <input list="vehicles" id="car" name="vehicle">
+                            <datalist id="vehicles">
+                                <option value="American"></option>
+                                <option value="Audi"></option>
+                                <option value="BMW"></option>
+                                <option value="Farrari"></option>
+                                <option value="Japanese"></option>
+                                <option value="Lamborghini"></option>
+                                <option value="Mclaren"></option>
+                                <option value="Mercedes"></option>
+                                <option value="Porshe"></option>
+                                <option value="Other Brands"></option>
+                            </datalist><br>
+                    </p>
+                    <p> 
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="nameInput" Name="name"><br>
+                    </p>
+                    <p>
+                        <label for="date">Choose your date:</label><br>
+                        <input type="text" id="dateInput" Name="date"><br>
+                    </p>
+                </form>
+                <div class="reserveBtn"> 
+                    <p>Reserve Now!</p>
+                </div>
+            </div>
         </section>
+        
 
+       
+        <!--FOOTER SECTION-->
         <section class="footer-section">
             <ul>
                 <li>
