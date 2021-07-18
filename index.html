@@ -6,31 +6,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Exotic Car Company</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
         <!--NAVBAR-->
-            <div class="navbar">
-                <div class="logo"><img src="images/logo2 (2).png" alt=""></div>
+        <div class="navbar">
+            <nav class="nav-wrapper">
+                <a href="#" class="logo"><img src="images/logo2 (2).png" alt=""></a>
                 <div class="navlinks">
                     <ul>
-                        <li class="navlist"><a class="links" href="#">Reservation</a></li>
                         <li class="navlist"><a class="links" href="#">Garage</a></li>
                         <li class="navlist"><a class="links" href="#">About Us</a></li>
-                        <li class="navlist"><a class="links" href="#">Contact</a></li>
+                        <li class="navlist"><a class="links" href="#">Reservation</a></li>
                     </ul>
-                </div>  
-            </div>   
+                </div>
+                <a href="#" class="contact-button">
+                    <p>
+                    Contact Us
+                    </p>
+                </a>  
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>   
 
         <!--INTRO PAGE-->
         <section class="intro-page">
             <div class="main-page-content">
-                <h1>
+                <h1 class="title">
                     Welcome to Infamous Car Company
                 </h1>
             </div>
-            <div class="background-hero"></div>
         </section>
 
         <!--OFFER SECTION-->
@@ -50,7 +60,7 @@
                 <div class="inventory">
                     <img class="icons" src="/images/car.png" alt="">
                     <p class="offer-header-sub">Inventory</p>
-                    <p class="inventory-description">We have the largest range of vehicles in the valley! If you can't find your dream car we will order one!</p>
+                    <p class="inventory-description" style="margin-left: 12px;">We have the largest range of vehicles in the valley! If you can't find your dream car we will order one!</p>
                 </div>
             </div>
         </section>
@@ -136,18 +146,20 @@
         </section>
        
         <!--ABOUT US SECTION-->
-        <section class="about">
+        <section class="about-section">
             <div class="about-container">
                 <div class="about-header">
                     <p>
                         About Us
                     </p>
                 </div>
-                <div class="storeimg"></div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, harum, laboriosam, eaque laudantium nemo expedita exercitationem iure nesciunt mollitia ad quis corporis minus est et velit nisi temporibus. Voluptas iusto blanditiis, deleniti perspiciatis dolore eveniet sint maxime vero voluptatibus magnam quis nulla soluta eius beatae est minima consequuntur similique eligendi mollitia nisi cupiditate accusamus quam? Fuga ipsa perspiciatis corrupti perferendis, praesentium cum veritatis facilis autem, culpa consequatur debitis temporibus qui sapiente unde consequuntur nesciunt tenetur ab harum cupiditate incidunt maxime labore hic reprehenderit error. Omnis soluta rerum recusandae vel pariatur doloribus sit sunt, atque impedit ex eius vitae delectus consectetur similique, blanditiis vero eaque culpa. <br><br>
-                    Facere, enim! Dolorum quasi atque officia perferendis ab assumenda, consequatur velit, temporibus cupiditate aliquam esse illum, voluptatum rem tenetur possimus libero pariatur nemo eos? Incidunt maxime, enim necessitatibus, iure impedit est ullam eveniet minima aut repellat nesciunt eius expedita! Aperiam corrupti impedit dignissimos voluptate qui, eos nesciunt quisquam quidem eum saepe mollitia in voluptatum vel deleniti obcaecati, magnam aliquam esse inventore ducimus placeat voluptates sit ut ex cumque! Optio ab perferendis aspernatur eum nemo magnam at tempore obcaecati quia pariatur explicabo nobis odio, velit amet modi, blanditiis fuga totam cumque voluptatibus corrupti officia. Sit deserunt porro nam pariatur totam velit corporis? Et omnis accusamus pariatur accusantium rerum ipsam recusandae doloribus aut tenetur voluptatem dicta provident perferendis labore voluptatibus qui, reprehenderit eligendi dolorem totam autem consequuntur ad enim, porro quidem? Esse voluptate facere quo eius quidem ipsam sequi optio laborum quas magni, fuga ex nesciunt!
-                </p>
+                <div class="about-content-wrapper">
+                    <div class="storeimg"></div>
+                    <p class="about-p">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, harum, laboriosam, eaque laudantium nemo expedita exercitationem iure nesciunt mollitia ad quis corporis minus est et velit nisi temporibus. Voluptas iusto blanditiis, deleniti perspiciatis dolore eveniet sint maxime vero voluptatibus magnam quis nulla soluta eius beatae est minima consequuntur similique eligendi mollitia nisi cupiditate accusamus quam? Fuga ipsa perspiciatis corrupti perferendis, praesentium cum veritatis facilis autem, culpa consequatur debitis temporibus qui sapiente unde consequuntur nesciunt tenetur ab harum cupiditate incidunt maxime labore hic reprehenderit error. Omnis soluta rerum recusandae vel pariatur doloribus sit sunt, atque impedit ex eius vitae delectus consectetur similique, blanditiis vero eaque culpa. <br><br>
+                        Facere, enim! Dolorum quasi atque officia perferendis ab assumenda, consequatur velit, temporibus cupiditate aliquam esse illum, voluptatum rem tenetur possimus libero pariatur nemo eos? Incidunt maxime, enim necessitatibus, iure impedit est ullam eveniet minima aut repellat nesciunt eius expedita! Aperiam corrupti impedit dignissimos voluptate qui, eos nesciunt quisquam quidem eum saepe mollitia in voluptatum vel deleniti obcaecati, magnam aliquam esse inventore ducimus placeat voluptates sit ut ex cumque! Optio ab perferendis aspernatur eum nemo magnam at tempore obcaecati quia pariatur explicabo nobis odio, velit amet modi, blanditiis fuga totam cumque voluptatibus corrupti officia. Sit deserunt porro nam pariatur totam velit corporis? Et omnis accusamus pariatur accusantium rerum ipsam recusandae doloribus aut tenetur voluptatem dicta provident perferendis labore voluptatibus qui, reprehenderit eligendi dolorem totam autem consequuntur ad enim, porro quidem? Esse voluptate facere quo eius quidem ipsam sequi optio laborum quas magni, fuga ex nesciunt!
+                    </p>
+                </div>
             </div>
         </section>
        
@@ -206,7 +218,11 @@
        
         <!--FOOTER SECTION-->
         <section class="footer-section">
-            <ul>
+            
+            <ul class="footer-nav">
+                <li>
+                    <img src="images/logo2 (2).png" alt="">
+                </li>
                 <li>
                     <a href="">Home</a>
                 </li>
@@ -217,18 +233,61 @@
                     <a href="">Garage</a>
                 </li>
                 <li>
-                    <a href="">Membership</a>
-                </li>
-                <li>
-                    <a href="">Policies</a>
-                </li>
-                <li>
                     <a href="">About Us</a>
                 </li>
                 <li>
                     <a href="">Contact Us</a>
                 </li>
             </ul>
+            
+            <ul class="footer-support">
+                            <h3>Support</h3>
+                            <li>
+                                <a href="">Contact Us</a> 
+                            </li>
+                            <li>
+                                <a href="">FAQ</a> 
+                            </li>
+                            <li>
+                                <a href="">Policies</a> 
+                            </li>
+                            <li>
+                                <a href="">Membership</a> 
+                            </li>
+                            <li>
+                                <a href="">Online Chat</a> 
+                            </li>
+                        </ul>
+            
+            <ul class="footer-social">
+                <h3>Social Media</h3>
+                <li>
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-twitter"></a>
+
+                </li>
+                <li>
+                    <a href="#" class="fa fa-youtube"></a>
+
+                </li>
+                <li>
+                    <a href="#" class="fa fa-instagram"></a>
+
+                </li>
+                <li>
+                    <a href="#" class="fa fa-snapchat"></a>
+
+                </li>
+                <li>
+                    <a href="#" class="fa fa-github"></a>
+
+                </li>
+            </ul>
+
+            
+            
         </section>
     </body>
 </html>
