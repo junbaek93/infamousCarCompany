@@ -29,15 +29,17 @@ body{
     position: fixed;
 }
 
-.logo{
-    float: left;
-    margin: 14px 20px 30px 40px;
+.nav-wrapper{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 0 10% 0 10%;
 }
 
 .navlinks{
-    float: left;
-    font-size: 20px;
-    margin: 20px 0px 0px 20%;
+    margin: 0 100px 0 100px;
 }
 
 ul{
@@ -48,66 +50,60 @@ li{
     display: inline;
 }
 
-.links{
-    color: white;
+a{
     text-decoration: none;
+    color: white;
+
+}
+
+.links{
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 .navlist:nth-child(2){
-    padding: 0px 100px 0px 100px;
+    padding: 0 50px 0 50px;
 }
 
-.navlist:last-child{
+
+.contact-button{
     background-color: rgb(51, 183, 235);
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 30px;
-    margin-left: 300px;
-
+    text-decoration: none;
 }
 
-.links:hover{
+.contact-button > p{
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+a:hover, .contact-button > p:hover{
     color: rgb(0, 162, 255);
     transition: all 0.3s ease;
 }
 
-
-/*--------Background hero image--------*/
-
-.background-hero{
+/*--------Main page content--------*/
+.main-page-content{
     background-image: url(images/370z.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
-    width: 100%;
 }
 
-/*--------Main page content--------*/
-.main-page-content{
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.main-page-content > h1{
-    color: rgb(255, 255, 255);
+.title{
     font-size: 50px;
     font-weight: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 20vw;
 }
 
 /*---------Offer section-------*/
 .offer-section{
-    height: 350px;
-    width: 100%;
+    min-height: 350px;
     background-color: rgba(161, 150, 150, 0.205);
 }
 
@@ -118,21 +114,22 @@ li{
 }
 
 .offers{
+    min-height: 350px;
     display: flex;
     margin-top: 50px;
     padding: 0 50px 0 80px ;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .miles, .price, .inventory{
     height: 200px;
     width: 400px;
-}
-
-.icons{
-    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 0 10px;
 }
 
 .offer-header-sub{
@@ -147,14 +144,13 @@ li{
 }
 
 .garage-header{
-    padding-top: 28px;
+    padding-top: 55px;
     font-size: 25px;
     text-align: center;
 }
 
 .garage-container{
     margin: 50px auto;
-    max-width: 1800px;
     height: 1000px;
 }
 
@@ -162,19 +158,19 @@ li{
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
 }
 
 .grid li{
-    padding: 5px;
-    width: 600px;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+    width: 100%;
     height: 500px;
 }
 
 .box{
-    width: 100%;
-    height: 100%;
+    max-width: 503px;
+    height: 460px;
 }
 
 .box-header{
@@ -187,67 +183,73 @@ li{
 }
 
 .american{
-    background: url(images/americanCars.jpg);   
-    background-size: cover; 
+    background: url(images/americanCars.png); 
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 
 .audi{
-    background: url(images/audiCars.jpg);   
-    background-size: cover; 
-    background-position-y: -400px;
+    background: url(images/audiCars.png);   
+    background-repeat: no-repeat;
+    background-position: center;   
     
 }
 
 .bmw{
-    background: url(images/bmwCars.jpg);   
-    background-size: cover; 
+    background: url(images/bmwCars.png);   
+    background-repeat: no-repeat;
+    background-position: center;   
 
     
 }
 
 .farrari{
-    background: url(images/ferrariCars.jpg);   
-    background-size: cover;
-    background-position-x: -140px;
+    background: url(images/ferrariCars.png);   
+    background-repeat: no-repeat;
+    background-position: center;  
     
 }
 
 .japanese{
-    background: url(images/japaneseCars.jpg);   
-    background-size: cover;
-    background-position-x: -140px;
+    background: url(images/japaneseCars.png);   
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 .lambo{
-    background: url(images/lamboCars.jpg);   
-    background-size: cover; 
-    background-position-x: -100px;
+    background: url(images/lamboCars.png);   
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 .mclaren{
-    background: url(images/mclarenCars.jpg);   
-    background-size: cover; 
-    background-position-x: -145px;
+    background: url(images/mclarenCars.png);   
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 .mercedes{
-    background: url(images/mercedesCars.jpg);   
-    background-size: cover; 
-    background-position-y: -100px;
+    background: url(images/mercedesCars.png);  
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 .porshe{
-    background: url(images/porcheCars.jpg);   
-    background-size: cover; 
+    background: url(images/porsheCars.png);   
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 /*------About Section-----*/
+.about-section{
+    min-height: 600px;
+    width: 100%;
+}
+
 .about-container{
     margin: 0 auto;
-    width: 1800px;
-    height: 550px;
-    
+    min-height: 600px;
 }
 
 .about-header{
@@ -256,19 +258,24 @@ li{
     text-align: center;
 }
 
+.about-content-wrapper{
+    min-height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .storeimg{
     width: 350px;
     height: 450px;
     background: url(images/store.jpg);
     background-size: cover;
-    float: left;
 }
 
-.about-container > p{
-    width: 1300px;
-    float: left;
-    margin-top: 60px;
-    margin-left: 80px;
+.about-p{
+    width: 860px;
+    min-height: 500px;
+    margin: 0 20px 20px 20px;
 }
 
 /*------reserve section------*/
@@ -335,121 +342,107 @@ form{
 }
 
 .footer-section{
-    height: 300px;
+    height: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
-@media screen and (max-width: 768px){
-    .navlinks{
-        float: left;
-        font-size: 20px;
-        margin: 20px 0 0 100px;
-    }
 
-    .navlist:nth-child(2){
-        padding: 0 20px 0 20px;
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav li a, .footer-support li a, .footer-social li a{
+    transition: all 0.3s ease;
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+}
+
+.footer-support{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+@media screen and (max-width: 1159px) {
+
+    .nav-wrapper{
+        padding: 0 3% 0 3%;
     }
     
-    .navlist:last-child{
-        margin-left: 100px;
+    .about-p{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .navbar{
+        background-color: rgba(161, 150, 150, 0.295);
+        height: 70px;
+        width: 100%;
+        position: fixed;
+    }
     
+    .nav-wrapper{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
     }
-
-    .main-page-content{
-        width: 768px;
-        
-    }
-
-    .main-page-content > h1{
+    
+    .title{
         font-size: 30px;
-        width: 600px;
+        padding-top: 40vh;
+    }
+
+    .offer-section{
+        display: inline-block;
+        min-height: 350px;
+        width: 100%;
+    }
+  
+    
+    .offers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 30px 0;
+        padding: 0;
+    }
+
+    .miles, .price, .inventory{
+        padding: 0;
     }
 
     .grid{
         list-style: none;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         text-align: center;
     }
-    
-    .garage-container{
-        margin: 0 auto;
-        width: 760px;
-        height: 1000px;
-    }
 
-    .grid li{
-        width: 300px;
-        height: 300px;
-    }
-
-    .american{ 
-        background-size: cover; 
-        background-position-x: -50px;
-    }
-
-    .audi{
-        background: url(/images/audiCars.jpg);   
-        background-size: cover; 
-        background-position-y: -100px;
-        
-    }
-}
-
-@media screen and (max-width: 1024px){
-    .background-hero{
-        background-image: url(/images/370z.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 90vh;
-        width: 1024px;
-    }
-    
-    .navlinks{
-        float: left;
-        font-size: 20px;
-        margin: 20px 0 0 100px;
-    }
-
-    .navlist:nth-child(2){
-        padding: 0 20px 0 20px;
-    }
-    
-    .navlist:last-child{
-        margin-left: 100px;
-    
-    }
-
-    .main-page-content{
-        width: 1024px;
-        
-    }
-
-    .main-page-content > h1{
-        font-size: 30px;
-        width: 600px;
+    .garage-section{
+        height: 2650px;
     }
 
     .garage-container{
-        margin-left: 20px;
-        max-width: 1000px;
-        height: 1000px;
+        min-height: 100%;
     }
 
-    .grid li{
-        width: 300px;
-        height: 300px;
+    .about-section{
+    }
+    
+    .reserve-section{
     }
 
-    .american{ 
-        background-size: cover; 
-        background-position-x: -50px;
-    }
-
-    .audi{
-        background: url(/images/audiCars.jpg);   
-        background-size: cover; 
-        background-position-y: -100px;
-        
+    .footer-section{
     }
 }
-
