@@ -22,7 +22,6 @@ let navToggle = function (){
         }
         toggleNavStatus = true;  
     }
- 
     else if(toggleNavStatus === true && screenWidth <= 400){
         topbar.style.height = "35vh";
         let arrayLength = navTopBar.length;
