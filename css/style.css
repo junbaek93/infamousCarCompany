@@ -15,8 +15,35 @@ body{
     color: white;
 }
 
-/*-----------NAVIGATION BAR--------------*/
+/*=======Table of contents==========
+    1. Navigation Bar
 
+    2. Main Page Content
+
+    3. Offer Section
+
+    4. Garage Section
+
+    5. About Section
+
+    6. Reserve Section
+
+    7. Footer Section
+
+    8. Responsive Section
+        8.1 1159px
+        8.2 1024px
+        8.3 980px
+        8.4 768px
+        8.5 550px
+        8.6 400px
+===================================*/
+
+/*==========================================================
+
+                1.Navigation bar
+                       
+ ===========================================================*/
 
 .intro-page{
     height: 90vh;
@@ -96,7 +123,12 @@ a:hover, .contact-button > p:hover{
 }
 
 
-/*--------Main page content--------*/
+/*==========================================================
+
+                    2. Main Page Section
+                       
+ ===========================================================*/
+
 .main-page-content{
     background-image: url(../images/370z.jpg);
     background-size: cover;
@@ -111,7 +143,12 @@ a:hover, .contact-button > p:hover{
     padding-top: 20vw;
 }
 
-/*---------Offer section-------*/
+/*==========================================================
+
+                    3. Offer Section
+                       
+ ===========================================================*/
+
 .offer-section{
     min-height: 350px;
     background-color: rgb(58, 58, 58);
@@ -147,7 +184,11 @@ a:hover, .contact-button > p:hover{
     font-size: 30px;
 }
 
-/*--------garage section------*/
+/*==========================================================
+
+                    4. Garage Section
+                       
+ ===========================================================*/
 
 .garage-section{
     min-height: 1650px;
@@ -251,7 +292,12 @@ a:hover, .contact-button > p:hover{
     background-position: center;  
 }
 
-/*------About Section-----*/
+/*==========================================================
+
+                    5. About Section
+                       
+ ===========================================================*/
+
 .about-section{
     min-height: 600px;
     width: 100%;
@@ -288,11 +334,17 @@ a:hover, .contact-button > p:hover{
     margin: 0 20px 20px 20px;
 }
 
-/*------reserve section------*/
+/*==========================================================
+
+                    6. Reserve Section
+                       
+ ===========================================================*/
+
 .reserve-section{
     height: 350px;
     width: 100%;
     background-color: rgb(58, 58, 58);
+
 }
 .reserve-header{
     padding-top: 28px;
@@ -301,8 +353,12 @@ a:hover, .contact-button > p:hover{
 }
 
 .reserve-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 400px;
-    height: 275px;
+    min-height: 275px;
     margin: 0 auto;
 }
 
@@ -318,8 +374,6 @@ form{
 }
 
 .reserveBtn{
-    margin: 40px auto;
-    
     background: linear-gradient(to right,
         hsl(0, 0%, 5.1%),
         hsl(210, 11.11%, 10.59%),
@@ -351,7 +405,16 @@ form{
     transition: all 0.3s ease;
 }
 
-.footer-section{
+
+
+/*==========================================================
+
+                    7. Footer Section
+                       
+ ===========================================================*/
+
+
+ .footer-section{
     height: 200px;
     display: flex;
     align-items:center;
@@ -380,6 +443,20 @@ form{
 }
 
 
+/*==========================================================
+
+                    8. Responsive Section
+                       
+ ===========================================================*/
+
+
+
+/*==========================================================
+
+                    8.1 1159px
+                       
+ ===========================================================*/
+
 @media screen and (max-width: 1159px) {
 
     .nav-wrapper{
@@ -391,6 +468,13 @@ form{
     }
 
 }
+
+/*==========================================================
+
+                    8.2 1024px
+                       
+ ===========================================================*/
+
 
 @media screen and (max-width: 1024px){
     .navbar{
@@ -447,6 +531,13 @@ form{
 
 }
 
+/*==========================================================
+
+                    8.3 980px
+                       
+ ===========================================================*/
+
+
 @media screen and (max-width: 980px) {
     .about-section, .about-container, .about-content-wrapper{
         min-height: 1000px;
@@ -474,7 +565,13 @@ form{
         min-height: 500px;
         margin: 30px;
     }
-    
+   
+/*==========================================================
+
+                    8.4 768px
+                       
+ ===========================================================*/    
+
 
 @media screen and (max-width:768px){
     .navlinks, .contact-button{
@@ -537,15 +634,20 @@ form{
 
 }
 
-@media screen and (max-width: 550px){
-    .title{
+
+/*==========================================================
+
+                    8.5 550px
+                       
+ ===========================================================*/
+
+
+@media screen and (max-width: 550px){ 
+     .title{
         font-size: 20px;
         padding-top: 20vw;
     }
 
-}
-
-@media screen and (max-width: 550px){
     .garage-section{
         min-height: 1650px;
     }
@@ -609,6 +711,14 @@ form{
 
 }
 
+
+/*==========================================================
+
+                    8.6 400px
+                       
+ ===========================================================*/
+
+
 @media screen and (max-width: 400px){
     .hamburger-toggle{
         margin-right: 0;
@@ -619,10 +729,11 @@ form{
     }
 
     .hamburger-nav-top{
+        visibility: visible;
         position: fixed;
         background-color: rgb(48, 47, 47);
         width: 100%;
-        height: 0;
+        height: 70px;
         top: 70px;
         transition: all .2s ease;
         opacity: .97;
