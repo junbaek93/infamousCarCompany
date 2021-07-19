@@ -465,7 +465,7 @@ form{
     .storeimg{
         width: 350px;
         height: 450px;
-        background: url(images/store.jpg);
+        background: url(../images/store.jpg);
         background-size: cover;
     }
     
