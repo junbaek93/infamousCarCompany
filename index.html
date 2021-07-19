@@ -10,32 +10,56 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--NAVBAR-->
-        <div class="navbar">
-            <nav class="nav-wrapper">
-                <a href="#" class="logo"><img src="images/logo2 (2).png" alt=""></a>
-                <div class="navlinks">
-                    <ul>
-                        <li class="navlist"><a class="links" href="#">Garage</a></li>
-                        <li class="navlist"><a class="links" href="#">About Us</a></li>
-                        <li class="navlist"><a class="links" href="#">Reservation</a></li>
-                    </ul>
-                </div>
-                <a href="#" class="contact-button">
-                    <p>
-                    Contact Us
-                    </p>
-                </a>  
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>   
-
         <!--INTRO PAGE-->
         <section class="intro-page">
+            <!--NAVBAR-->
+            <div class="navbar">
+                <nav class="nav-wrapper">
+                    <a href="#" class="logo"><img src="images/logo2 (2).png" alt=""></a>
+                    <div class="navlinks">
+                        <ul>
+                            <li class="navlist"><a class="links" href="#">Garage</a></li>
+                            <li class="navlist"><a class="links" href="#">About Us</a></li>
+                            <li class="navlist"><a class="links" href="#">Reservation</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="contact-button">
+                        <p>
+                        Contact Us
+                        </p>
+                    </a>   
+            <!--HAMBURGER TOGGLE-->
+                    <div class="hamburger-toggle" onclick="navToggle()">
+                    <button class="hamburger">
+                        <div class="bar">
+                    </button>
+                    </div>
+                </nav>
+            </div>  
+
+            <!--HAMBUGER NAV ASIDE-->
+            <aside class="hamburger-nav">
+                <ul class="hamburger-links">
+                    <li><a href="#">Garage</a></li><hr>
+                    <li><a href="#">About Us</a></li><hr>
+                    <li><a href="#">Reservation</a></li><hr>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </aside>
+            
+            <nav class="hamburger-nav-top">
+                <ul class="hamburger-links-top">
+                    <li><a href="#">Garage</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!--JS FOR HAMBURGER NAV TOGGLE-->
+            <script src="navigation__toggle.js"></script>
+            
+            <!--MAIN PAGE CONTENT-->
             <div class="main-page-content">
                 <h1 class="title">
                     Welcome to Infamous Car Company
@@ -290,4 +314,5 @@
             
         </section>
     </body>
+    
 </html>
