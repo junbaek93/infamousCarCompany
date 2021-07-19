@@ -91,7 +91,7 @@ a:hover, .contact-button > p:hover{
     margin-right: 50px;
 }
 
-.hamburger-nav, .hamburger-toggle{
+.hamburger-nav, .hamburger-toggle, .hamburger-nav-top{
     visibility: hidden;
 }
 
