@@ -10,11 +10,9 @@ let navToggle = function (){
     if(toggleNavStatus === false && (screenWidth <= 768 && screenWidth > 400)){
         sidebar.style.width = "0";
         toggleNavStatus = true;  
-       
     }
     else if(toggleNavStatus === true && (screenWidth <= 768 && screenWidth > 400)){
         sidebar.style.width = "200px";
-
         toggleNavStatus = false;
     }
     else if(toggleNavStatus === false && screenWidth <= 400){
@@ -33,5 +31,4 @@ let navToggle = function (){
         }
         toggleNavStatus = false;
     }
-    
 }
