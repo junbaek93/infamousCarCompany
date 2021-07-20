@@ -24,7 +24,6 @@ let navToggle = function (){
     }
     else if(toggleNavStatus === true && screenWidth <= 400){
         topbar.style.height = "35vh";
-        let arrayLength = navTopBar.length;
         for(var i = 0; i < arrayLength; i++){
             navTopBar[i].style.visibility = "visible";
         }

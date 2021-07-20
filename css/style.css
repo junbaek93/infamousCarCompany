@@ -8,8 +8,8 @@
     box-sizing: border-box;
     font-family: 'poppins';
     scroll-behavior: smooth;
-
 }
+
 body{
     background-color: black;
     color: white;
@@ -55,6 +55,7 @@ body{
     width: 100%;
     position: fixed;
     opacity: .97;
+    z-index: 1000;
 }
 
 .nav-wrapper{
@@ -190,7 +191,8 @@ a:hover, .contact-button > p:hover{
                        
  ===========================================================*/
 
-.garage-section{
+#garage-section{
+    padding-top: 20px;
     min-height: 1650px;
 }
 
@@ -220,6 +222,7 @@ a:hover, .contact-button > p:hover{
 }
 
 .box{
+    margin: 0 auto;
     max-width: 503px;
     height: 460px;
 }
@@ -232,6 +235,59 @@ a:hover, .contact-button > p:hover{
 .box-header > p{
     padding-top: 6px;
 }
+
+.model-discription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.model-discription{
+    visibility: hidden;
+
+}
+
+.reserveModelBtn{
+    background: linear-gradient(to right,
+        hsl(0, 0%, 5.1%),
+        hsl(210, 11.11%, 10.59%),
+        hsl(207.69, 16.05%, 15.88%),
+        hsl(205.26, 17.43%, 21.37%),
+        hsl(206.4, 18.25%, 26.86%),
+        hsl(206.25, 19.51%, 32.16%),
+        hsl(206.84, 19.79%, 37.65%),
+        hsl(205.91, 20%, 43.14%),
+        hsl(205.88, 20.65%, 48.43%),
+        hsl(206.32, 24.26%, 53.92%));
+    width: 160px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+.reserveModelBtn{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in;
+}
+
+.overlay:hover .model-discription{
+    height: 100%;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.733);
+    transition: all .5s ease-in;
+}
+
 
 .american{
     background: url(../images/americanCars.png); 
@@ -298,7 +354,9 @@ a:hover, .contact-button > p:hover{
                        
  ===========================================================*/
 
-.about-section{
+#about-section{
+    display: inline-block;
+    padding-top: 80px;
     min-height: 600px;
     width: 100%;
 }
@@ -340,7 +398,7 @@ a:hover, .contact-button > p:hover{
                        
  ===========================================================*/
 
-.reserve-section{
+#reserve-section{
     height: 350px;
     width: 100%;
     background-color: rgb(58, 58, 58);
@@ -521,7 +579,7 @@ form{
         text-align: center;
     }
 
-    .garage-section{
+    #garage-section{
         min-height: 2650px;
     }
 
@@ -539,7 +597,7 @@ form{
 
 
 @media screen and (max-width: 980px) {
-    .about-section, .about-container, .about-content-wrapper{
+    #about-section, .about-container, .about-content-wrapper{
         min-height: 1000px;
     }
 
@@ -648,7 +706,7 @@ form{
         padding-top: 20vw;
     }
 
-    .garage-section{
+    #garage-section{
         min-height: 1650px;
     }
     
