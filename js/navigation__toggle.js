@@ -30,3 +30,14 @@ let navToggle = function (){
         toggleNavStatus = false;
     }
 }
+
+let navClose = function (){
+    let sidebar = document.querySelector(".hamburger-nav");
+    let topbar = document.querySelector(".hamburger-nav-top");
+
+    sidebar.style.width = "0";
+    topbar.style.width = "0";
+
+    toggleNavStatus = true;  
+
+}
